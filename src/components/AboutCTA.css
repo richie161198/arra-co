@@ -1,0 +1,30 @@
+.about-cta {
+  padding: var(--section-padding) 0;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.about-cta__inner {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.about-cta__text {
+  font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--color-text-muted);
+  margin: 0 0 1.5rem 0;
+}
+
+.about-cta__link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.about-cta__link:hover {
+  color: var(--color-text);
+}

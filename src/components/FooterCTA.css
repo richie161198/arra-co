@@ -1,0 +1,30 @@
+.footer-cta {
+  background: var(--color-bg-dark);
+  padding: clamp(2.5rem, 6vw, 4rem) 0;
+}
+
+.footer-cta__inner {
+  text-align: center;
+}
+
+.footer-cta__text {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 0.75rem 0;
+}
+
+.footer-cta__link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.footer-cta__link:hover {
+  opacity: 1;
+}
+
+.footer-cta__link::after {
+  background: #fff;
+}
