@@ -1,6 +1,11 @@
 .footer-cta {
   background: var(--color-bg-dark);
-  padding: clamp(2.5rem, 6vw, 4rem) 0;
+  min-height: 300px;
+  width: 80%;
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(3.5rem, 8vw, 5rem) 0;
+  display: flex;
+  align-items: center;
 }
 
 .footer-cta__inner {
@@ -8,15 +13,17 @@
 }
 
 .footer-cta__text {
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
-  font-weight: 500;
+
+  font-size: 44px;
+  font-weight: 400;
   color: #fff;
   margin: 0 0 0.75rem 0;
 }
 
 .footer-cta__link {
-  font-size: 1rem;
-  font-weight: 500;
+
+  font-size: 30px;
+  font-weight: 400;
   color: #fff;
   opacity: 0.9;
 }

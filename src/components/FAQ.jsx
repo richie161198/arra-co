@@ -4,28 +4,28 @@ import './FAQ.css'
 const faqItems = [
   {
     id: 1,
-    question: 'How long for services?',
-    answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+    question: 'How do you understand our brand before starting?',
+    answer: "Mention discovery calls, research, and collaboration.",
   },
   {
     id: 2,
-    question: 'How long does it take to receive services?',
-    answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
+    question: 'What digital marketing services do you offer?',
+    answer: 'SEO, social media, ads, content creation. this is your space to shine.',
   },
   {
     id: 3,
-    question: 'Do you travel for services?',
-    answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
+    question: 'What does your process look like?',
+    answer: 'Understand → Plan → Execute → Optimize → Support',
   },
   {
     id: 4,
-    question: 'Can I request specific services?',
-    answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
+    question: 'How do you measure success?',
+    answer: 'Leads, conversions, ROI not just likes/followers.',
   },
   {
     id: 5,
-    question: "What's included in the services?",
-    answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since',
+    question: "How often will we communicate?",
+    answer: 'Weekly updates, easy access, no ghosting.',
   },
 ]
 

@@ -1,10 +1,11 @@
 :root {
-  --color-bg: #ffffff;
+  --color-bg: rgba(255, 255, 255, 0.88);
+  --color-bg-solid: #ffffff;
   --color-bg-dark: #0a0a0a;
   --color-text: #1a1a1a;
   --color-text-muted: #6b6b6b;
   --color-text-light: #9a9a9a;
-  --color-border: #e5e5e5;
+  --color-border: rgba(229, 229, 229, 0.7);
   --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-weight-light: 300;
   --max-width: 1280px;
@@ -29,8 +30,13 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: var(--color-text);
-  background: var(--color-bg);
+  background: transparent;
   -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  position: relative;
+  z-index: 0;
 }
 
 img {

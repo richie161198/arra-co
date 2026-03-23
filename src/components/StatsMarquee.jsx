@@ -40,8 +40,8 @@ export default function StatsMarquee() {
   return (
     <section className="stats-marquee" aria-label="Our clients">
       <div className="stats-marquee__header container">
-        <h2 className="stats-marquee__title">OUR CLIENTS</h2>
-        <p className="stats-marquee__subtitle">TRUSTED BY LEADING BRANDS & CLIENTS</p>
+        <h2 className="stats-marquee__title">CLIENTS</h2>
+        <p className="stats-marquee__subtitle">Let’s grow our business together.</p>
       </div>
       <div className="stats-marquee__track-wrap">
         <div className="stats-marquee__track" ref={marqueeRef}>

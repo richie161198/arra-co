@@ -10,7 +10,7 @@
 }
 
 .header.scrolled {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
@@ -44,6 +44,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 28px;
+  font-weight: 400;letter-spacing: 0.5rem;
 }
 
 .header__logo-icon svg {
@@ -75,8 +77,8 @@
 }
 
 .header__link {
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   letter-spacing: 0.02em;
   color: #fff;
   transition: color 0.2s ease;

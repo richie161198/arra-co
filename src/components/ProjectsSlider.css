@@ -6,9 +6,7 @@
 }
 
 .projects-slider__header {
-  max-width: 1400px;
-  margin: 0 auto 4rem;
-  padding: 0 clamp(1.25rem, 5vw, 2.5rem);
+  margin-bottom: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -17,14 +15,8 @@
 }
 
 .projects-slider__title {
-  font-family: var(--font-sans, 'helveticaLight'), system-ui, sans-serif;
-  font-size: clamp(0.75rem, 4vw, 2.6rem);
-  /* font-weight: 700; */
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  color: var(--color-text, #1a1a1a);
   margin: 0;
-  max-width: 500px;
+  max-width: 36ch;
 }
 
 .projects-slider__link {

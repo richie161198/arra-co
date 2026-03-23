@@ -1,0 +1,89 @@
+.work-area {
+  padding: var(--section-padding, 4rem) 0;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border, #e5e5e5);
+}
+
+.work-area__inner {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(2rem, 5vw, 3rem);
+}
+
+.work-area__title {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 400;
+}
+
+.work-area__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 3vw, 1.5rem);
+}
+
+@media (max-width: 900px) {
+  .work-area__grid {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+.work-area__column {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  min-width: 0;
+}
+
+/* Spacing between image and video lives inside the image hit zone so the gap isn’t a dead zone */
+.work-area__image-zone {
+  padding-bottom: clamp(0.75rem, 2vw, 1rem);
+}
+
+.work-area__video-zone {
+  min-width: 0;
+}
+
+.work-area__media {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--color-border, #e5e5e5);
+}
+
+.work-area__media--image {
+  aspect-ratio: 4 / 5;
+}
+
+.work-area__media--video {
+  aspect-ratio: 3 /5 ;
+}
+
+/* Image swap: quicker, slightly snappier curve */
+.work-area__img {
+position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  transition: opacity 0.28s cubic-bezier(0.33, 1, 0.53, 1);
+  
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease; */
+}
+
+/* Video crossfade: slower, eased — independent of image timing */
+.work-area__video {
+  position: absolute;
+  inset: 0;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.62s ease-in-out;
+}

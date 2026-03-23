@@ -1,4 +1,4 @@
-.careers {
+/* .careers {
   padding-top: calc(var(--header-height) + 2rem);
   min-height: 100vh;
   background: var(--color-bg);
@@ -19,8 +19,7 @@
 }
 
 .careers__title {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.5rem);  font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--color-text);
   margin: 0 0 1rem 0;
@@ -32,6 +31,7 @@
   color: var(--color-text-muted);
   margin: 0;
   max-width: 62ch;
+  padding-bottom: 4rem;
 }
 
 .careers__content {
@@ -87,7 +87,7 @@
   font-family: inherit;
   font-size: 1rem;
   color: var(--color-text);
-  background: var(--color-bg);
+  background: var(--color-bg-solid, #fff);
   border: 1px solid var(--color-border);
   border-radius: 4px;
   transition: border-color 0.2s ease;
@@ -143,4 +143,4 @@
   line-height: 1.6;
   color: var(--color-text-muted);
   margin: 0;
-}
+} */

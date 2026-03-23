@@ -154,15 +154,15 @@ export default function ProjectsSlider() {
 
   return (
     <section id="work" ref={sectionRef} className="projects-slider">
-      <div className="projects-slider__header">
+      <div className="projects-slider__header container">
         <motion.h2
-          className="projects-slider__title"
+          className="projects-slider__title section-heading"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          Explore our works 
+          Works 
         </motion.h2>
         <motion.a
           href="#contact"

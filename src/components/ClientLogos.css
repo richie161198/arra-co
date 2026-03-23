@@ -1,7 +1,7 @@
 .client-logos {
   padding: var(--section-padding) 0;
   background: var(--color-bg);
-  border-top: 1px solid var(--color-border);
+  border-top: 2px solid var(--color-border);
 }
 
 .client-logos__grid {

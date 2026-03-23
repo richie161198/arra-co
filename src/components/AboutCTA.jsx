@@ -2,7 +2,7 @@ import './AboutCTA.css'
 
 export default function AboutCTA() {
   return (
-    <section className="about-cta">
+    <section className="about-cta" id="about">
       <div className="container about-cta__inner">
         <p className="about-cta__text">
           Take a peek into the Design Studio and learn about Arra & Co's restless culture.
