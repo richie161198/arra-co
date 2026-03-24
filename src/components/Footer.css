@@ -57,7 +57,15 @@
   color: rgba(255, 255, 255, 0.75);
 }
 
+.footer__address a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 .footer__contact a:hover {
+  color: #ffffff;
+}
+
+.footer__address a:hover {
   color: #ffffff;
 }
 

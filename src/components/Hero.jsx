@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="hero__bg">
         <video
           className="hero__bg-video"
-          src="/work-area/hero.mp4"
+          src="/work-area/Hq.mp4"
           autoPlay
           muted
           loop
@@ -16,11 +16,7 @@ export default function Hero() {
       </div>
       <div className="hero__content container">
         <p className="hero__label">Arra & Co</p>
-        <h1 className="hero__title">
-        Every click counts 
-          <br />
-          
-        </h1>
+        <span className="hero__title">Every click counts</span>
         {/* <p className="hero__subtitle">
           All work, all play, everyday. We strategize, design and deliver.
         </p> */}

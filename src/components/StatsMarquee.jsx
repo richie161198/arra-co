@@ -3,14 +3,21 @@ import gsap from 'gsap';
 import './StatsMarquee.css';
 
 const companyLogos = [
-  { src: '/Cred-Logo.svg', alt: 'CRED' },
-  { src: '/flipkart.svg', alt: 'Flipkart' },
-  { src: '/Westside.svg', alt: 'Westside' },
-  { src: '/Zudio-Logo.svg', alt: 'Zudio' },
-  { src: '/Indian-Terrain-Logo.svg', alt: 'Indian Terrain' },
-  // { src: '/intellect.svg', alt: 'Intellect' },
-  { src: '/Misbu-Logo.svg', alt: 'Misbu' },
-  { src: '/palam_silks_logo-1.svg', alt: 'Palam Silks' },
+  { src: '/clients/i1.png', alt: 'CRED' },
+  { src: '/clients/i2.png', alt: 'QWATI' },
+  { src: '/clients/i3.png', alt: 'FAE' },
+  { src: '/clients/i4.png', alt: 'SONICUS' },
+  { src: '/clients/i5.png', alt: 'STATY' },
+  { src: '/clients/i6.png', alt: 'ZANSH' },
+  { src: '/clients/i7.png', alt: 'NEXUS' },
+  { src: '/clients/i8.png', alt: 'PRIMO' },
+  { src: '/clients/i9.png', alt: 'VELO' },
+  { src: '/clients/i10.png', alt: 'AXIS' },
+  { src: '/clients/i11.png', alt: 'OMNI' },
+  { src: '/clients/i12.png', alt: 'FLUX' },
+  { src: '/clients/i13.png', alt: 'CORE' },
+  { src: '/clients/i14.png', alt: 'PEAK' },
+  { src: '/clients/i15.png', alt: 'ZEN' },
   // { src: '/xracing.svg', alt: 'XRacing' },
 ];
 
@@ -28,7 +35,7 @@ export default function StatsMarquee() {
       { x: startX },
       {
         x: startX - width,
-        duration: 6,
+        duration: 15,
         ease: 'none',
         repeat: -1,
       }

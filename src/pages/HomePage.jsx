@@ -22,7 +22,7 @@ export default function HomePage() {
       <StatsMarquee />
       <FooterCTA />
       <FAQ />
-      <Careers />
+      {/* <Careers /> */}
       <Footer />
     </main>
   )

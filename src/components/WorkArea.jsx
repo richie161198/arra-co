@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import './WorkArea.css';
 
@@ -8,21 +8,21 @@ const workColumns = [
     // image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80',
     // imageHover: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&q=80',
     image: '/work-area/11.jpg',
-    imageHover: '/work-area/12.jpg',
+    imageHover: '/work-area/32.jpg',
     video: '/work-area/v1.mp4',
     videoHover: '/work-area/v1-hover.mp4',
   },
   {
     id: 2,
-    image: '/work-area/21.jpg',
-    imageHover: '/work-area/22.jpg',
+    image: '/work-area/22.jpg',
+    imageHover: '/work-area/21.jpg',
     video: '/work-area/v2.mp4',
     videoHover: '/work-area/v2-hover.mp4',
   },
   {
     id: 3,
-    image: '/work-area/31.jpg',
-    imageHover: '/work-area/32.jpg',
+    image: '/work-area/12.jpg',
+    imageHover: '/work-area/31.jpg',
     video: '/work-area/v3.mp4',
     videoHover: '/work-area/v3-hover.mp4',
   },
@@ -30,26 +30,6 @@ const workColumns = [
 
 export default function WorkArea() {
   const [hoveredImageIndex, setHoveredImageIndex] = useState(null);
-  const [hoveredVideoIndex, setHoveredVideoIndex] = useState(null);
-  const defaultVideoRefs = useRef([]);
-  const hoverVideoRefs = useRef([]);
-
-  useEffect(() => {
-    workColumns.forEach((_, i) => {
-      const def = defaultVideoRefs.current[i];
-      const alt = hoverVideoRefs.current[i];
-      if (!def || !alt) return;
-
-      const showAltVideo = hoveredVideoIndex === i;
-      if (showAltVideo) {
-        def.pause();
-        alt.play().catch(() => {});
-      } else {
-        alt.pause();
-        def.play().catch(() => {});
-      }
-    });
-  }, [hoveredVideoIndex]);
 
   return (
     <section className="work-area" aria-labelledby="work-area-heading" id='work'>
@@ -68,7 +48,6 @@ export default function WorkArea() {
         <div className="work-area__grid">
           {workColumns.map((col, index) => {
             const imageActive = hoveredImageIndex === index;
-            const videoActive = hoveredVideoIndex === index;
             return (
               <article key={col.id} className="work-area__column">
                 <div
@@ -94,33 +73,15 @@ export default function WorkArea() {
                   </div>
                 </div>
 
-                <div
-                  className="work-area__video-zone"
-                  onMouseEnter={() => setHoveredVideoIndex(index)}
-                  onMouseLeave={() => setHoveredVideoIndex(null)}
-                >
+                <div className="work-area__video-zone">
                   <div className="work-area__media work-area__media--video">
                     <video
-                      ref={(el) => {
-                        defaultVideoRefs.current[index] = el;
-                      }}
-                      className="work-area__video work-area__video--base"
+                      className="work-area__video"
                       src={col.video}
                       muted
                       loop
+                      autoPlay
                       playsInline
-                      style={{ opacity: videoActive ? 0 : 1 }}
-                    />
-                    <video
-                      ref={(el) => {
-                        hoverVideoRefs.current[index] = el;
-                      }}
-                      className="work-area__video work-area__video--hover"
-                      src={col.video}
-                      muted
-                      loop
-                      playsInline
-                      style={{ opacity: videoActive ? 1 : 0 }}
                     />
                   </div>
                 </div>

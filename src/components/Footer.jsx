@@ -97,9 +97,17 @@ export default function Footer() {
             <a href="tel:++919003387933">+91 9003387933</a>
             <br />
             <a href="mailto:support@arraandco.in">arrafirm@gmail.com</a>
-          </p> <p className="footer__address">
-           45 south Sivan kovil street 
-Kodambakkam - 600024, Chennai.
+          </p>
+          <p className="footer__address">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=45+South+Sivan+Kovil+Street+Kodambakkam+600024+Chennai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              45 south Sivan kovil street
+              <br />
+              Kodambakkam - 600024, Chennai.
+            </a>
           </p>
         </div>
         
@@ -110,22 +118,22 @@ Kodambakkam - 600024, Chennai.
           © {currentYear} Arra & Co, LLC. All Rights Reserved.
         </p>
         <nav className="footer__socials" aria-label="Social media">
-          <a href="#" className="footer__social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/share/1J3d7HYRQP/?mibextid=wwXIfr" className="footer__social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
             <FacebookIcon />
           </a>
-          <a href="#" className="footer__social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/arrachennai?igsh=aDdpamx0ZmZiZmYw" className="footer__social" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
             <InstagramIcon />
           </a>
-          <a href="#" className="footer__social" aria-label="X" target="_blank" rel="noopener noreferrer">
+          {/* <a href="#" className="footer__social" aria-label="X" target="_blank" rel="noopener noreferrer">
             <XIcon />
-          </a>
+          </a> */}
           {/* <a href="#" className="footer__social" aria-label="Behance" target="_blank" rel="noopener noreferrer">
             <BehanceIcon />
           </a> */}
-          <a href="#" className="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/arraandco" className="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
             <LinkedInIcon />
           </a>
-          <a href="#" className="footer__social" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/9003387933" className="footer__social" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
             <WhatsAppIcon />
           </a>
         </nav>

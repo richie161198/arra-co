@@ -24,9 +24,9 @@ export default function Header({ className = '' }) {
           <a href="#about" className="header__link">About</a>
           <a href="#services" className="header__link">Services</a>
           <a href="#work" className="header__link">Works</a>
-          {/* <Link to="/careers" className="header__link">Careers</Link> */}
+          <Link to="/careers" className="header__link">Careers</Link>
 
-          <a href="#careers" className="header__link">Careers</a>
+          {/* <a href="#careers" className="header__link">Careers</a> */}
           <a href="#contact" className="header__link">Contact</a>
         </nav>
         {/* <button

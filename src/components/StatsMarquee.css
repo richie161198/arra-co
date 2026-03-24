@@ -27,7 +27,7 @@
   font-weight: 400;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-text-muted, #6b6b6b);
+  color: var(--color-text-muted, #1c1c1c);
   margin: 0;
   padding-left: 0.5rem;  padding-bottom: 5rem;
 
@@ -57,8 +57,9 @@
   width: auto;
   max-width: 240px;
   object-fit: contain;
+  /* filter: brightness(0) opacity(0.95); */
   filter: grayscale(1) opacity(0.95);
-  transition: filter 1s ease;
+  transition: filter 5s ease;
 }
 
 /* .stats-marquee__item:hover .stats-marquee__logo {

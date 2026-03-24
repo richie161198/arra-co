@@ -36,7 +36,8 @@ export default function Careers() {
           </div>
         </section> */}
 
-        <section className="careers__content" id='careers'>
+      <section className="careers__content" id='careers'>
+        
           <div className="container">
             {submitted ? (
               <div className="careers__success">
