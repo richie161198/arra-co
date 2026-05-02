@@ -1,5 +1,17 @@
 .footer-cta {
-  background: var(--color-bg-dark);
+  background: var(--color-bg);
+  min-height: 300px;
+  /* width: 80%; */
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(3.5rem, 8vw, 5rem) 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-cta2 {
+    background: var(--color-bg-dark, #0a0a0a);
+
+  /* background: #3e256e; */
   min-height: 300px;
   width: 80%;
   margin: 0 auto;
@@ -15,7 +27,7 @@
 .footer-cta__text {
 
   font-size: 44px;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
   margin: 0 0 0.75rem 0;
 }
@@ -23,7 +35,7 @@
 .footer-cta__link {
 
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
   opacity: 0.9;
 }

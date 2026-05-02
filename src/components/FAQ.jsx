@@ -30,7 +30,7 @@ const faqItems = [
 ]
 
 export default function FAQ() {
-  const [openId, setOpenId] = useState(1)
+  const [openId, setOpenId] = useState(0)
 
   const toggle = (id) => {
     setOpenId((prev) => (prev === id ? null : id))
@@ -40,9 +40,9 @@ export default function FAQ() {
     <section className="faq" id="faq">
       <div className="faq__inner container">
         <h2 className="faq__title">FAQ</h2>
-        <p className="faq__subtitle">
+        {/* <p className="faq__subtitle">
           Everything you need to know about our studio
-        </p>
+        </p> */}
 
         <ul className="faq__list">
           {faqItems.map((item) => {

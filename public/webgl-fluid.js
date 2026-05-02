@@ -1739,6 +1739,23 @@ function runSimulation(config) {
 
   // Updated to allow single colors
   function generateColor() {
+    if (
+      config.SPLAT_COLOR &&
+      typeof config.SPLAT_COLOR.r === "number" &&
+      typeof config.SPLAT_COLOR.g === "number" &&
+      typeof config.SPLAT_COLOR.b === "number"
+    ) {
+      const r = config.SPLAT_COLOR.r;
+      const g = config.SPLAT_COLOR.g;
+      const b = config.SPLAT_COLOR.b;
+      const maxC = Math.max(r, g, b) / 255;
+      const scale = maxC > 0 ? 0.15 / maxC : 0;
+      return {
+        r: (r / 255) * scale,
+        g: (g / 255) * scale,
+        b: (b / 255) * scale,
+      };
+    }
     if (config.RANDOM_COLORS) {
       let c = HSVtoRGB(Math.random(), 1.0, 1.0);
       c.r *= 0.15;

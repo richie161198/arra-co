@@ -12,7 +12,7 @@
 .careers__label {
 
   font-size: 44px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-text-muted);
@@ -21,7 +21,7 @@
 
 .careers__title {
   font-size: 44px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -0.02em;
   color: var(--color-text);
   margin: 0 0 1rem 0;
@@ -30,7 +30,7 @@
 .careers__subtitle {
 
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
   color: var(--color-text-muted);
   margin: 0;
@@ -47,7 +47,7 @@
 .careers__heading {
  
   font-size: 44px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: -0.02em;
   color: var(--color-text);
   margin: 0 0 2rem 0;
@@ -83,7 +83,7 @@
 .careers__field-label {
 
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-text-muted);
@@ -120,7 +120,7 @@
   font-family: inherit;
 
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--color-bg);
@@ -143,7 +143,7 @@
 .careers__success-title {
 
   font-size: 44px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--color-text);
   margin: 0 0 0.5rem 0;
 }
@@ -151,7 +151,7 @@
 .careers__success-text {
 
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--color-text-muted);
   margin: 0;
 }

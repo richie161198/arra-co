@@ -11,20 +11,19 @@
 
 .stats-marquee__title {
   font-family: var(--font-sans, 'DM Sans'), system-ui, sans-serif;
-
   font-size: 44px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--color-text, #1a1a1a);
-  margin: 0 0 0.5rem 0;
+  margin: 0.2rem 0 4rem 0;
 }
 
 .stats-marquee__subtitle {
   font-family: var(--font-sans, 'DM Sans'), system-ui, sans-serif;
 
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text-muted, #1c1c1c);
@@ -34,15 +33,34 @@
 }
 
 .stats-marquee__track-wrap {
+  margin: 0 10rem 5rem;
   overflow: hidden;
 }
 
-.stats-marquee__track {
-  display: flex;
-  align-items: center;
+@media (max-width: 768px) {
+  .stats-marquee__track-wrap {
+    margin: 0 1rem 3rem;
+  }
+}
+
+/* react-fast-marquee: linear CSS animation, seamless loop */
+.stats-marquee__track.rfm-marquee-container {
+  width: 100%;
+}
+
+.stats-marquee__track .rfm-marquee {
   gap: 4rem;
-  width: max-content;
-  will-change: transform;
+}
+
+.stats-marquee__track .rfm-initial-child-container {
+  gap: 4rem;
+}
+
+/* Extra space after the last logo before the strip repeats (right-side loop gap only) */
+.stats-marquee__loop-end-spacer {
+  flex-shrink: 0;
+  width: var(--stats-marquee-loop-end-pad, 1rem);
+  height: 1px;
 }
 
 .stats-marquee__item {
@@ -58,7 +76,7 @@
   max-width: 240px;
   object-fit: contain;
   /* filter: brightness(0) opacity(0.95); */
-  filter: grayscale(1) opacity(0.95);
+  filter: grayscale(1) ;
   transition: filter 5s ease;
 }
 

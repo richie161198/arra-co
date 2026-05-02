@@ -1,5 +1,7 @@
 .footer {
   background: var(--color-bg-dark, #0a0a0a);
+    /* background: #3e256e; */
+
   color: #ffffff;
   padding: var(--section-padding) 0 2rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
@@ -21,9 +23,8 @@
 
 .footer__heading {
   font-size: 33px;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
   margin: 0 0 1rem 0;
 }
@@ -50,7 +51,7 @@
   color: rgba(255, 255, 255, 0.75);
   margin: 0;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .footer__contact a {
@@ -115,16 +116,22 @@
   color: #ffffff;
 }
 
-/* Footer uses the same typography class names as StatsMarquee; force inverted colors here */
 .footer .stats-marquee__title {
   color: #ffffff;
-  font-size: 44px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 300;
 
 }
 
 .footer .stats-marquee__subtitle {
   color: rgba(255, 255, 255, 0.7);
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
+}
+
+.stats-marquee__subtitle2{
+
+  font-size: 34px;
+  font-weight: 100;
+ 
 }

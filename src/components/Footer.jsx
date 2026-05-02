@@ -69,8 +69,8 @@ export default function Footer() {
             <a href="#contact">Contact</a>
           </nav> */}
 
-        <h2 className="stats-marquee__title">Arra & co.</h2>
-        <p className="stats-marquee__subtitle">TRUSTED BY LEADING BRANDS & CLIENTS</p>
+        <h2 className="stats-marquee__title">ARRA & CO.</h2>
+        <p className="stats-marquee__subtitle2">Trusted By Leading Brands & Clients</p>
         </div>
         <div className="footer__col">
           {/* <h3 className="footer__heading">Legal</h3>

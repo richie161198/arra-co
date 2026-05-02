@@ -16,6 +16,13 @@ export default function Hero() {
       </div>
       <div className="hero__content container">
         <p className="hero__label">Arra & Co</p>
+        
+           {/* <img
+              src="/arra1.png"
+              alt="Arra & Co"
+              className="header__logo-img"
+              loading="lazy"
+            /> */}
         <span className="hero__title">Every click counts</span>
         {/* <p className="hero__subtitle">
           All work, all play, everyday. We strategize, design and deliver.

@@ -9,16 +9,25 @@ export default function Header({ className = '' }) {
     <header className={`header ${className}`.trim()}>
       <div className="header__inner container">
         <Link to="/" className="header__logo" aria-label="Home">
-          <span className="header__logo-icon" aria-hidden>
-            {/* <img
-              src="/arra.png"
+          <img
+              // src="/ara2.png"
+              src="/arra1.png"
+              alt="Arra & Co"
+              className="header__logo-img"
+              loading="lazy"
+            />
+          {/* <span className="header__logo-text">Arra & Co</span> */}
+          {/* <span className="header__logo-text">ARRA</span> */}
+            <span className="header__logo-img" aria-hidden>
+           
+            {/* ARRA
+               <img
+              src="/arra1.png"
               alt="Arra & Co"
               className="header__logo-img"
               loading="lazy"
             /> */}
-            ARRA
           </span>
-          {/* <span className="header__logo-text">Arra & Co</span> */}
         </Link>
         <nav className="header__links" aria-label="Main navigation">
           <a href="#about" className="header__link">About</a>
