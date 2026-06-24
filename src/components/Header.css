@@ -47,7 +47,7 @@
 }
 
 .header__logo-icon {
-  width: 54px;
+  width: 5px;
   height: 54px;
   display: flex;
   align-items: center;
@@ -63,8 +63,9 @@
 }
 
 .header__logo-img {
-  width: 30%;
-  height: 30%;
+  height: clamp(1.125rem, 2.2vw, 1.5rem);
+  width: auto;
+  max-width: 5.5rem;
   object-fit: contain;
   margin-right: 10rem;
   display: block;

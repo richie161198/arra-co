@@ -1,13 +1,11 @@
 import { useState } from 'react'
-import Footer from '../components/Footer'
-import './Careers.css'
+import Footer from './Footer'
+import './contacts.css'
 
-export default function Careers() {
+export default function Contacts() {
   const [formData, setFormData] = useState({
     name: '',
-    email: '',
     phone: '',
-    role: '',
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
@@ -20,7 +18,7 @@ export default function Careers() {
   const handleSubmit = (e) => {
     e.preventDefault()
     setSubmitted(true)
-    setFormData({ name: '', email: '', phone: '', role: '', message: '' })
+    setFormData({ name: '',  phone: '', message: '' })
   }
 
   return (
@@ -47,30 +45,18 @@ export default function Careers() {
               </div>
             ) : (
               <form className="careers__form" onSubmit={handleSubmit}>
-            <h1 className="careers__title">Join our team</h1>
+            <h1 className="careers__title">Business Enquiries</h1>
              <p className="careers__subtitle">
-              We're always looking for curious minds and creative problem-solvers.
-              Share your details below and we'll get back to you.
+             Looking to grow your business online?
+             Let's talk about how we can help you.
             </p>
                 <div className="careers__form-grid">
                   <label className="careers__label-field">
-                    <span className="">Name</span>
+                    <span className="careers__field-label">Name</span>
                     <input
                       type="text"
                       name="name"
                       value={formData.name}
-                      onChange={handleChange}
-                      className="careers__input"
-                      placeholder=""
-                      required
-                    />
-                  </label>
-                  <label className="careers__label-field">
-                    <span className="careers__field-label">Email</span>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
                       onChange={handleChange}
                       className="careers__input"
                       placeholder=""
@@ -83,39 +69,6 @@ export default function Careers() {
                       type="tel"
                       name="phone"
                       value={formData.phone}
-                      onChange={handleChange}
-                      className="careers__input"
-                      placeholder=""
-                    />
-                  </label>
-                  <label className="careers__label-field">
-                    <span className="careers__field-label">Role of interest</span>
-                    <input
-                      type="text"
-                      name="role"
-                      value={formData.role}
-                      onChange={handleChange}
-                      className="careers__input"
-                      placeholder=""
-                    />
-                  </label>
-                  <label className="careers__label-field">
-                    <span className="careers__field-label">Current Role</span>
-                    <input
-                      type="text"
-                      name="current_role"
-                      value={formData.current_role}
-                      onChange={handleChange}
-                      className="careers__input"
-                      placeholder=""
-                    />
-                  </label>
-                  <label className="careers__label-field">
-                    <span className="careers__field-label">Years of Experience</span>
-                    <input
-                      type="text"
-                      name="years_of_experience"
-                      value={formData.years_of_experience}
                       onChange={handleChange}
                       className="careers__input"
                       placeholder=""

@@ -8,6 +8,8 @@ export default function Careers() {
     email: '',
     phone: '',
     role: '',
+    currentRole: '',
+    yearsOfExperience: '',
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
@@ -20,7 +22,15 @@ export default function Careers() {
   const handleSubmit = (e) => {
     e.preventDefault()
     setSubmitted(true)
-    setFormData({ name: '', email: '', phone: '', role: '', message: '' })
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      role: '',
+      currentRole: '',
+      yearsOfExperience: '',
+      message: '',
+    })
   }
 
   return (
@@ -104,8 +114,8 @@ export default function Careers() {
                     <span className="careers__field-label">Current Role</span>
                     <input
                       type="text"
-                      name="current_role"
-                      value={formData.current_role}
+                      name="currentRole"
+                      value={formData.currentRole}
                       onChange={handleChange}
                       className="careers__input"
                       placeholder=""
@@ -115,8 +125,8 @@ export default function Careers() {
                     <span className="careers__field-label">Years of Experience</span>
                     <input
                       type="text"
-                      name="years_of_experience"
-                      value={formData.years_of_experience}
+                      name="yearsOfExperience"
+                      value={formData.yearsOfExperience}
                       onChange={handleChange}
                       className="careers__input"
                       placeholder=""

@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import HomePage from './pages/HomePage'
 import Careers from './pages/Careers'
+import Contacts from './components/contacts'
 
 export default function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -22,6 +23,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </>
   )

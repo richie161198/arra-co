@@ -6,7 +6,8 @@ const services = [
   'Branding',
   'Graphic Design',
   'Content Creation',
-  'Web & App Development',
+  'Web & App Development','Gen AI Services',
+  'Web3 Development'
 ]
 // SEO  SMO  Branding  Graphic Designing  Content creation  Web & App development
 export default function Services() {

@@ -49,7 +49,8 @@ function WhatsAppIcon() {
   'Branding',
   'Graphic Design',
   'Content Creation',
-  'Web & App Development',
+  'Web & App Development','Gen AI Services',
+  'Web3 Development'
 ]
 
 export default function Footer() {
@@ -69,7 +70,7 @@ export default function Footer() {
             <a href="#contact">Contact</a>
           </nav> */}
 
-        <h2 className="stats-marquee__title">ARRA & CO.</h2>
+        <h2 className="stats-marquee__title">ARRA & CO</h2>
         <p className="stats-marquee__subtitle2">Trusted By Leading Brands & Clients</p>
         </div>
         <div className="footer__col">

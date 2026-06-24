@@ -11,7 +11,7 @@ export default function Header({ className = '' }) {
         <Link to="/" className="header__logo" aria-label="Home">
           <img
               // src="/ara2.png"
-              src="/arra1.png"
+              src="/arra12.png"
               alt="Arra & Co"
               className="header__logo-img"
               loading="lazy"
@@ -34,9 +34,10 @@ export default function Header({ className = '' }) {
           <a href="#services" className="header__link">Services</a>
           <a href="#work" className="header__link">Works</a>
           <Link to="/careers" className="header__link">Careers</Link>
+          <Link to="/contacts" className="header__link">Contacts</Link>
 
           {/* <a href="#careers" className="header__link">Careers</a> */}
-          <a href="#contact" className="header__link">Contact</a>
+          {/* <a href="/contact" className="header__link">Contact</a> */}
         </nav>
         {/* <button
           type="button"
