@@ -9,7 +9,7 @@ const companyLogos = [
   { src: '/clients2/5.png', alt: 'STATY' },
   { src: '/clients2/6.png', alt: 'ZANSH' },
   { src: '/clients2/7.png', alt: 'NEXUS' },
-  { src: '/clients2/88.png', alt: 'PRIMO' },
+  // { src: '/clients2/88.png', alt: 'PRIMO' },
   { src: '/clients2/9.png', alt: 'VELO' },
   { src: '/clients2/10.png', alt: 'AXIS' },
   { src: '/clients2/11.png', alt: 'OMNI' },

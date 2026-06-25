@@ -183,9 +183,9 @@ export default function ProjectsSlider() {
               key={`${project.id}-${index}`}
               className="projects-slider__card"
               ref={(el) => (cardsRef.current[index] = el)}
-              initial={{ opacity: 0, scale: 0.95 }}
+              initial={{ opacity: 1, scale: 1 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
               whileHover={{ y: -8, transition: { duration: 0.2 } }}
             >
@@ -214,9 +214,9 @@ export default function ProjectsSlider() {
                   videoCardsRef.current[index] = el;
                 }
               }}
-              initial={{ opacity: 0, scale: 0.95 }}
+              initial={{ opacity: 1, scale: 1 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
             >
