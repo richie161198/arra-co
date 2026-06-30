@@ -33,13 +33,13 @@
 }
 
 .stats-marquee__track-wrap {
-  margin: 0 10rem 5rem;
+  margin-bottom: 5rem;
   overflow: hidden;
 }
 
 @media (max-width: 768px) {
   .stats-marquee__track-wrap {
-    margin: 0 1rem 3rem;
+    margin-bottom: 3rem;
   }
 }
 

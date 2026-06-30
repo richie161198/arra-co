@@ -49,7 +49,7 @@ function WhatsAppIcon() {
   'Branding',
   'Graphic Design',
   'Content Creation',
-  'Web & App Development','Gen AI Services',
+  'Web & App Development','Gen AI Development',
   'Web3 Development'
 ]
 

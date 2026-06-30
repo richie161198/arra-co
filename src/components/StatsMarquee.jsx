@@ -35,7 +35,7 @@ export default function StatsMarquee() {
         <h2 className="stats-marquee__title">Clients</h2>
         {/* <p className="stats-marquee__subtitle">Let’s grow our business together.</p> */}
       </div>
-      <div className="stats-marquee__track-wrap">
+      <div className="stats-marquee__track-wrap container">
         <Marquee
           className="stats-marquee__track"
           speed={50}
